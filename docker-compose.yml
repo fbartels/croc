@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+  croc:
+    build: ./
+    image: schollz/croc
+    restart: unless-stopped
+    ports:
+      - "9009-9013:9009-9013"
+    #environment:
+      #- CROC_PASS=your-password
